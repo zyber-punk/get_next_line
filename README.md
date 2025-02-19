@@ -1,27 +1,45 @@
-# **get_next_line**
+<h1 align="center">
+  <br>
+  <img src="https://i.ibb.co/Z18h4xNy/logo-get-next-line.png" alt="get_next_line" width="150">
+  <br>
+  get_next_line
+  <br>
+</h1>
 
-Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui permet de lire une ligne depuis un descripteur de fichier (fd).
+<h4 align="center"><em>Développer une fonction en C, `get_next_line`, qui permet de lire une ligne depuis un descripteur de fichier (fd).</em></h4>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/languages-1-orange">
+  <img src="https://img.shields.io/badge/C-100%25-blue">
+  <img src="https://img.shields.io/badge/Note-125%2F125-brightgreen">
+</p>
+
+<p align="center">
+  <a href="#-fonctionnalit%C3%A9s">Fonctionnalités</a> •
+  <a href="#-description">Description</a> •
+  <a href="#%EF%B8%8F-compilation">Compilation</a>
+</p>
 
 ---
 
-## **Fonctionnalités**
+## 📌 **Fonctionnalités**
 
-### Partie Obligatoire
+### ✅ Partie obligatoire
 - Lecture ligne par ligne depuis un fichier ou l'entrée standard.
 - Retourne une ligne complète, y compris le caractère `\n` lorsqu'il est présent.
 - Gère correctement les fins de fichier et les cas d'erreurs.
 
-### Partie Bonus
+### 🚀 Partie Bonus
 - Prise en charge de plusieurs descripteurs de fichier ouverts simultanément.
 - Gestion indépendante des données pour chaque descripteur.
 
 ---
 
-## **Description des fonctions**
+## 📝 **Description**
 
 ![Diagramme explicatif](./get_next_line.png)
 
-### **get_next_line**
+### 🔹 **get_next_line**
 - **Rôle** : Fonction principale. Lit une ligne depuis un fichier et gère les données restantes grâce à une variable statique.
 - **Fonctionnement** :
   1. Vérifie les erreurs initiales (descripteur invalide, taille de buffer incorrecte, etc.).
@@ -33,7 +51,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **create_list**
+### 🔹 **create_list**
 - **Rôle** : Remplit une liste chaînée avec les données lues à partir du fichier.
 - **Fonctionnement** :
   1. Lit les données avec `read` et les stocke dans un buffer.
@@ -45,7 +63,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **add_to_list**
+### 🔹 **add_to_list**
 - **Rôle** : Ajoute un nouveau nœud à la liste chaînée.
 - **Fonctionnement** :
   1. Alloue un nouveau nœud.
@@ -55,7 +73,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **found_newline**
+### 🔹 **found_newline**
 - **Rôle** : Vérifie si un caractère `\n` est présent dans la liste chaînée.
 - **Fonctionnement** :
   - Parcourt chaque nœud et retourne `1` dès qu'un `\n` est trouvé.
@@ -63,7 +81,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **get_line**
+### 🔹 **get_line**
 - **Rôle** : Extrait une ligne complète depuis la liste chaînée.
 - **Fonctionnement** :
   1. Utilise `len_to_newline` pour calculer la taille de la ligne à extraire.
@@ -73,14 +91,14 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **len_to_newline**
+### 🔹 **len_to_newline**
 - **Rôle** : Calcule la longueur jusqu'au caractère `\n`.
 - **Fonctionnement** :
   - Parcourt la liste chaînée et compte les caractères jusqu'à `\n`.
 
 ---
 
-### **copy_str**
+### 🔹 **copy_str**
 - **Rôle** : Copie les caractères jusqu'à `\n` depuis la liste chaînée vers une nouvelle chaîne.
 - **Fonctionnement** :
   - Itère sur chaque nœud et copie les caractères un par un.
@@ -88,7 +106,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **polish_list**
+### 🔹 **polish_list**
 - **Rôle** : Nettoie la liste après l'extraction d'une ligne.
 - **Fonctionnement** :
   1. Garde les données restantes après `\n` dans un nouveau nœud.
@@ -96,7 +114,7 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-### **dealloc**
+### 🔹 **dealloc**
 - **Rôle** : Libère la mémoire des nœuds inutilisés.
 - **Fonctionnement** :
   - Parcourt chaque nœud et libère sa mémoire.
@@ -104,12 +122,11 @@ Ce projet a pour objectif de développer une fonction en C, `get_next_line`, qui
 
 ---
 
-## **Compiler et tester le projet**
+## ⚙️ **Compilation**
 
-### Compilation
-- **Partie Obligatoire** :
+- **Partie obligatoire** :
   ```bash
   cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
-- **Partie Bonus** :
+- **Partie bonus** :
   ```bash
   cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line_bonus.c get_next_line_utils_bonus.c
