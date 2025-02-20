@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center"><em>Développer une fonction en C, `get_next_line`, qui permet de lire une ligne depuis un descripteur de fichier (fd).</em></h4>
+<h4 align="center"><em>Développer un programme en C, qui permet de lire une ligne depuis un descripteur de fichier (fd).</em></h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/languages-1-orange">
