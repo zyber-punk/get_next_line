@@ -16,7 +16,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/languages-1-orange">
   <img src="https://img.shields.io/badge/C-100%25-blue">
-  <img src="https://img.shields.io/badge/Grade-125%2F125-brightgreen">
+  <img src="https://img.shields.io/badge/Grade-125%2F100-brightgreen">
 </p>
 
 <p align="center">
@@ -99,7 +99,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/langages-1-orange">
   <img src="https://img.shields.io/badge/C-100%25-blue">
-  <img src="https://img.shields.io/badge/Note-125%2F125-brightgreen">
+  <img src="https://img.shields.io/badge/Note-125%2F100-brightgreen">
 </p>
 
 <p align="center">
